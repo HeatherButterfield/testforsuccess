@@ -3,7 +3,12 @@ import React from "react";
 function App() {
   return (
     <div>
-      Hello World
+      <h1>Colors:</h1>
+      <div class="box rgba-blue-strong"></div>
+      <div class="box rgba-cyan-strong"></div>
+      <div class="box rgba-teal-strong"></div>
+      <div class="box rgba-yellow-strong"></div>
+
     </div>
   )
 }
