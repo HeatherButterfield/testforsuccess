@@ -2,3 +2,25 @@
   width: 100px;
   height: 100px;
 }
+
+.btn-rounded {
+  border-radius: 50px;
+}
+
+.margins-20 {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.margins-2 {
+  margin: 2%;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.half {
+    width: 50%;
+}
