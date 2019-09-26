@@ -24,3 +24,10 @@
 .half {
     width: 50%;
 }
+
+@media (max-width: 576px) {
+  .margins-20 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
