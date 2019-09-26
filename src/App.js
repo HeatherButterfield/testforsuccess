@@ -8,7 +8,6 @@ function App() {
       <div class="box rgba-cyan-strong"></div>
       <div class="box rgba-teal-strong"></div>
       <div class="box rgba-yellow-strong"></div>
-
     </div>
   )
 }
