@@ -7,13 +7,16 @@
   border-radius: 50px;
 }
 
-.margins-20 {
+.margins-sides {
   margin-left: 20%;
   margin-right: 20%;
 }
 
-.margins-2 {
-  margin: 2%;
+.margins-top-bottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .cardContainer {
