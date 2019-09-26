@@ -11,7 +11,7 @@ function HomePage() {
           <div className="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
             <div>
               <h3 className="card-title pt-2"><strong>Welcome to Test for Success!</strong></h3>
-              <p className="margins-20">We are a testing software designed for elementary school teachers. Dicover how easy it is to create tests and then quickly test a student’s reading ability (letters, letter sounds, simple sight words, vowel families, etc) 1 on 1. Student test data is at your fingertips. You can view and download student scores so you can target students for interventions.</p>
+              <p className="margins-20">We are a testing software designed for elementary school teachers. Dicover how easy it is to create tests and then quickly test a student’s reading ability (letters, letter sounds, simple sight words, vowel families, etc) one on one. Student test data is at your fingertips. You can view and download student scores so you can target students for interventions.</p>
               <a href="" className="btn btn-rounded yellow accent-1 text-dark">Sign up!</a>
               <a href="" className="btn btn-rounded btn-outline-white waves-effect">Login</a>
             </div>
