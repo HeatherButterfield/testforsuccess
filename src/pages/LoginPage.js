@@ -10,7 +10,7 @@ function LoginPage() {
       </div>
       <div class="row justify-content-around">
         <div className="margins-bottom">
-          <div className="card" style={{ width: "350px" }}>
+          <div className="card" style={{ width: "400px" }}>
             <a href="/login/student">
               <img className="card-img-top" src={Student} alt="Student" ></img>
               <div className="card-body">
@@ -20,7 +20,7 @@ function LoginPage() {
           </div>
         </div>
         <div className="margin-bottom">
-          <div className="card" style={{ width: "350px" }}>
+          <div className="card" style={{ width: "400px" }}>
             <a href="/login/teacher">
               <img className="card-img-top" src={Teacher} alt="Teacher" ></img>
               <div className="card-body">
