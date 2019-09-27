@@ -17,7 +17,7 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent-333">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link" href="">Home</a>
+                <a className="nav-link" href="/">Home</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="">Data</a>
@@ -47,7 +47,7 @@ function App() {
                 </a>
                 <div className="dropdown-menu dropdown-menu-right dropdown-default"
                   aria-labelledby="navbarDropdownMenuLink-333">
-                  <a className="dropdown-item" href="">Login</a>
+                  <a className="dropdown-item" href="/login">Login</a>
                   <a className="dropdown-item" href="">Profile</a>
                 </div>
               </li>
@@ -58,17 +58,7 @@ function App() {
           <Routes />
 
           <footer className="page-footer font-small rgba-blue-strong pt-4">
-            <div className="container">
-              <ul className="list-unstyled list-inline text-center py-2">
-                <li className="list-inline-item">
-                  <h5 className="mb-1">Register for free</h5>
-                </li>
-                <li className="list-inline-item">
-                  <a href="" className="btn btn-rounded yellow accent-1 text-dark">Sign up!</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-copyright text-center py-3">© 2019 Copyright: Test for Success</div>
+            <div className="text-center py-3">© 2019 Copyright: Test for Success</div>
           </footer>
         </main>
       </div>

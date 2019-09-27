@@ -7,14 +7,19 @@
   border-radius: 50px;
 }
 
-.margins-sides {
+.margin-sides {
   margin-left: 20%;
   margin-right: 20%;
 }
 
-.margins-top-bottom {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.margin-top {
+  margin-top: 40px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.margin-bottom {
+  margin-bottom: 40px;
   margin-left: 0px;
   margin-right: 0px;
 }
