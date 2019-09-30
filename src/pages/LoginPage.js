@@ -1,30 +1,27 @@
 import React from "react";
-import Teacher from "../assets/teacher.png"
-import Student from "../assets/student.png"
+import Teacher from "../assets/loginPageTeacher.png"
+import Student from "../assets/loginPageStudents.png"
 
 function LoginPage() {
   return (
     <div class="container">
-      <div class="row justify-content-center margin-bottom margin-top">
-        <h1>Who are you?</h1>
-      </div>
       <div class="row justify-content-around">
-        <div className="margins-bottom">
+        <div className="margins-bottom margin-top">
           <div className="card" style={{ width: "400px" }}>
             <a href="/login/student">
-              <img className="card-img-top" src={Student} alt="Student" ></img>
               <div className="card-body">
-                <h4 className="card-title text-center"><a>Student</a></h4>
+                <h4 className="card-title text-center"><a>Student View</a></h4>
+                <img className="card-img-top text-center" src={Student} alt="Student" style={{ height: "400px", width: "auto" }}></img>
               </div>
             </a>
           </div>
         </div>
-        <div className="margin-bottom">
+        <div className="margin-bottom margin-top">
           <div className="card" style={{ width: "400px" }}>
             <a href="/login/teacher">
-              <img className="card-img-top" src={Teacher} alt="Teacher" ></img>
               <div className="card-body">
-                <h4 className="card-title text-center"><a>Teacher</a></h4>
+                <h4 className="card-title text-center"><a>Teacher View</a></h4>
+                <img className="card-img-top text-center" src={Teacher} alt="Teacher" style={{ height: "400px", width: "auto" }}></img>
               </div>
             </a>
           </div>
