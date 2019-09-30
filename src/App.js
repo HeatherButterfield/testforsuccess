@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Routes";
-import { ReactComponent as Logo } from "./assets/logoWhite.svg";
+import Logo from "./assets/logoWhite.png";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <div>
         <main>
           <nav className="mb-1 navbar navbar-expand-lg navbar-dark rgba-blue-strong">
-          <a className="navbar-brand" href="#"><Logo style={{ height: "4rem", width: "15rem" }} /></a>
+          <a className="navbar-brand" href="#"><img src={Logo} style={{ height: "3rem" }} /></a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
             aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
