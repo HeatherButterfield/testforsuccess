@@ -55,3 +55,9 @@
     margin-right: 10%;
   }
 }
+
+@media (max-width: 1024px) {
+  .homePageHeader {
+    background-size: 600px 500px;
+  }
+}

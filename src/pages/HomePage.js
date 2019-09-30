@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <div className="container">
       <div class="row margin-top margin-bottom">
-        <div style={{backgroundImage: "url(" + Header + ")", backgroundSize: "cover", height: "800px"}}>
+        <div class="homePageHeader" style={{backgroundImage: "url(" + Header + ")", backgroundSize: "100% auto", height: "800px", backgroundRepeat: "no-repeat"}}>
           <div class="text-center py-5 px-4 margin-sides">
             <div>
               <h2 class="h1-responsive pt-3 mb-5 font-bold margin-top"><strong>Welcome to Test for Success!</strong></h2>
