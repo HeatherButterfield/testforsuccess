@@ -14,14 +14,10 @@
 
 .margin-top {
   margin-top: 40px;
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 .margin-bottom {
   margin-bottom: 40px;
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 .cardContainer {
@@ -31,6 +27,11 @@
 
 .half {
     width: 50%;
+}
+
+.margin-none {
+  margin: 0px;
+  padding: 0px;
 }
 
 #page-container {
@@ -49,10 +50,20 @@
   height: 5rem;
 }
 
+.mobile {
+  display: none;
+}
+
 @media (max-width: 576px) {
-  .margins-20 {
+  .margin-sides {
     margin-left: 10%;
     margin-right: 10%;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inherit;
   }
 }
 
