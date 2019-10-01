@@ -50,7 +50,7 @@ function HomePage() {
           <img src={BarGraph} alt="student data" style={{ width: "90%" }}/>
         </div>
       </div>
-      <div className="row text-center margin-bottom align-items-center mobile">
+      <div className="row text-center margin-bottom d-flex justify-content-conter align-items-center mobile">
         <div class="col-sm-12 col-md-6">
           <img src={OneOnOne} alt="one on one" style={{ width: "70%" }}/>
         </div>
@@ -58,7 +58,7 @@ function HomePage() {
           <h4>Test students one on one</h4>
         </div>
       </div>
-      <div className="row text-center margin-bottom align-items-center mobile">
+      <div className="row text-center margin-bottom d-flex justify-content-conter align-items-center mobile">
         <div class="col-sm-12 col-md-6">
           <img src={BarGraph} alt="student data" style={{ width: "70%" }}/>
         </div>

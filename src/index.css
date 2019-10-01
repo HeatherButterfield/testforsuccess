@@ -67,8 +67,14 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .homePageHeader {
     background-size: 600px 500px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inherit;
   }
 }
