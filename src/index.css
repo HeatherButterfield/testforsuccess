@@ -50,11 +50,7 @@
   height: 5rem;
 }
 
-.mobile {
-  display: none;
-}
-
-@media (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .margin-sides {
     margin-left: 10%;
     margin-right: 10%;
@@ -67,14 +63,11 @@
   }
 }
 
-@media (max-width: 992px) {
-  .homePageHeader {
-    background-size: 600px 500px;
-  }
+@media screen and (min-width: 1024px) {
   .desktop {
-    display: none;
+    display: inherit;
   }
   .mobile {
-    display: inherit;
+    display: none;
   }
 }
