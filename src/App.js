@@ -48,6 +48,11 @@ function App() {
                        <i className="fas fa-cog"></i>
                      </a>
                    </li>
+                   <li className="nav-item">
+                     <a className="nav-link waves-effect waves-light">
+                        <i class="fas fa-question"></i>
+                     </a>
+                   </li>
                    <li className="nav-item dropdown">
                      <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
