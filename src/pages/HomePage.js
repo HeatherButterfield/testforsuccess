@@ -24,7 +24,7 @@ function HomePage() {
         <div class="row text-center">
           <div class="margin-bottom margin-top">
             <h2 class="h1-responsive font-bold"><strong>Welcome to Test for Success!</strong></h2>
-            <p class="margin-sides">We are a testing software designed for elementary school teachers. Dicover how easy it is to create tests and then quickly test a student’s reading ability (letters, letter sounds, simple sight words, vowel families, etc) one on one. Student test data is at your fingertips. You can view and download student scores so you can target students for interventions.
+            <p class="margin-sides">We are a testing software designed for elementary school teachers.
             </p>
             <a class="btn text-dark yellow accent-1 btn-rounded btn-md">Sign-up</a>
             <a href="/login" class="btn text-white rgba-cyan-strong btn-rounded btn-md">Login</a>
