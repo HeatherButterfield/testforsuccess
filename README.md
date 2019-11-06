@@ -40,17 +40,22 @@ Right click server(s) > create > server …
 
 On the next window fill out the following":
 
-Name: This is solely for you. Name it whatever you want, I chose ‘CS4230’
+#### Name: This is solely for you. Name it whatever you want, I chose ‘CS4230’
 Under the connection tab: hostname/address. It should look like **-**-**...amazonaws.com
-Keep the port at 5432, unless your credentials list otherwise
-Maintenance database — this is the database field in the credentials
-Username — this is the user field in the credentials
-Password — the password field in the credentials. I highly advise checking save password so that you don’t have to copypasta this every time you want to connect.
-In the SSL tab, mark SSL mode as require
+
+#### Keep the port at 5432, unless your credentials list otherwise
+
+#### Maintenance database — this is the database field in the credentials
+
+#### Username — this is the user field in the credentials
+
+#### Password — the password field in the credentials. I highly advise checking save password so that you don’t have to copypasta this every time you want to connect.
+
+#### In the SSL tab, mark SSL mode as require
 
 At this point, if we were to hit ‘save’ (please don’t), something very strange would happen. You’d see hundreds if not thousands of databases appear in pgAdmin. This has to do with how Heroku configures their servers. You’ll still only have access to your specific database, not those of others. In order to avoid parsing so many databases we have to white list only those databases we care about.
 
-Go to the Advanced tab and under db restriction copy the database name (it’s the same value as the Maintenance database field filled earlier).
+#### Go to the Advanced tab and under db restriction copy the database name (it’s the same value as the Maintenance database field filled earlier).
 
 Now hit 'save', it should connect and you should see your Database name populate. If you expand the views, you go to DB -> Schema -> Tables. 
 
