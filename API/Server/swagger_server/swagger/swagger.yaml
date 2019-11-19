@@ -1,0 +1,810 @@
+---
+swagger: "2.0"
+info:
+  description: "API for Test4Success"
+  version: "1"
+  title: "Test_4_Success"
+host: "ec2-23-21-94-99.compute-1.amazonaws.com"
+basePath: "/dfdl2gmjf1u73c"
+schemes:
+- "https"
+- "http"
+paths:
+  /users:
+    post:
+      tags:
+      - "users"
+      summary: "Add new user to system"
+      operationId: "add_user"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "User object that needs added to system"
+        required: true
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        405:
+          description: "Invalid Input"
+      x-swagger-router-controller: "swagger_server.controllers.users_controller"
+    put:
+      tags:
+      - "users"
+      summary: "Update existing user"
+      operationId: "update_user"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "User object that needs to be added"
+        required: true
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        200:
+          description: "OK"
+      x-swagger-router-controller: "swagger_server.controllers.users_controller"
+  /users/{userId}:
+    get:
+      tags:
+      - "users"
+      summary: "Find User by ID"
+      description: "Returns a single user"
+      operationId: "get_user_by_id"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "userId"
+        in: "path"
+        description: "ID of user to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Successful"
+          schema:
+            $ref: "#/definitions/User"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "User not found"
+      x-swagger-router-controller: "swagger_server.controllers.users_controller"
+    delete:
+      tags:
+      - "users"
+      summary: "Deletes a user"
+      operationId: "delete_user"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "api_key"
+        in: "header"
+        required: false
+        type: "string"
+      - name: "userId"
+        in: "path"
+        description: "User id to delete"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "User not found"
+      x-swagger-router-controller: "swagger_server.controllers.users_controller"
+  /teachers:
+    post:
+      tags:
+      - "teachers"
+      summary: "Add new teacher"
+      operationId: "add_teacher"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Teacher object that needs added to system"
+        required: true
+        schema:
+          $ref: "#/definitions/Teacher"
+      responses:
+        405:
+          description: "Invalid Input"
+      x-swagger-router-controller: "swagger_server.controllers.teachers_controller"
+    put:
+      tags:
+      - "teachers"
+      summary: "Update existing teacher"
+      operationId: "update_teacher"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Teacher object that needs to be added"
+        required: true
+        schema:
+          $ref: "#/definitions/Teacher"
+      responses:
+        200:
+          description: "OK"
+      x-swagger-router-controller: "swagger_server.controllers.teachers_controller"
+  /teachers/{teacherId}:
+    get:
+      tags:
+      - "teachers"
+      summary: "Find Teacher by ID"
+      description: "Returns a single teacher"
+      operationId: "get_teacher_by_id"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "teacherId"
+        in: "path"
+        description: "ID of teacher to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Successful"
+          schema:
+            $ref: "#/definitions/Teacher"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Teacher not found"
+      x-swagger-router-controller: "swagger_server.controllers.teachers_controller"
+    delete:
+      tags:
+      - "teachers"
+      summary: "Deletes a teacher"
+      operationId: "delete_teacher"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "teacherId"
+        in: "path"
+        description: "Teacher id to delete"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Teacher not found"
+      x-swagger-router-controller: "swagger_server.controllers.teachers_controller"
+  /students:
+    post:
+      tags:
+      - "students"
+      summary: "Add new student"
+      operationId: "add_student"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Student object that needs added to system"
+        required: true
+        schema:
+          $ref: "#/definitions/Student"
+      responses:
+        405:
+          description: "Invalid Input"
+      x-swagger-router-controller: "swagger_server.controllers.students_controller"
+    put:
+      tags:
+      - "students"
+      summary: "Update existing student"
+      operationId: "update_student"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Student object that needs to be added"
+        required: true
+        schema:
+          $ref: "#/definitions/Student"
+      responses:
+        200:
+          description: "OK"
+      x-swagger-router-controller: "swagger_server.controllers.students_controller"
+  /students/{studentId}:
+    get:
+      tags:
+      - "students"
+      summary: "Find Student by ID"
+      description: "Returns a single student"
+      operationId: "get_student_by_id"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "studentId"
+        in: "path"
+        description: "ID of student to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Successful"
+          schema:
+            $ref: "#/definitions/Student"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Student not found"
+      x-swagger-router-controller: "swagger_server.controllers.students_controller"
+    delete:
+      tags:
+      - "students"
+      summary: "Deletes a student"
+      operationId: "delete_student"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "studentId"
+        in: "path"
+        description: "Student id to delete"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Student not found"
+      x-swagger-router-controller: "swagger_server.controllers.students_controller"
+  /score:
+    post:
+      tags:
+      - "score"
+      summary: "Add new score"
+      operationId: "add_score"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Score object that needs added"
+        required: true
+        schema:
+          $ref: "#/definitions/Scores"
+      responses:
+        405:
+          description: "Invalid Input"
+      x-swagger-router-controller: "swagger_server.controllers.score_controller"
+    put:
+      tags:
+      - "score"
+      summary: "Update existing score"
+      operationId: "update_score"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Score object that needs to be added"
+        required: true
+        schema:
+          $ref: "#/definitions/Scores"
+      responses:
+        200:
+          description: "OK"
+      x-swagger-router-controller: "swagger_server.controllers.score_controller"
+  /score/{scoreId}:
+    get:
+      tags:
+      - "score"
+      summary: "Find Score by ID"
+      description: "Returns a single score"
+      operationId: "get_score_by_id"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "scoreId"
+        in: "path"
+        description: "ID of score to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Successful"
+          schema:
+            $ref: "#/definitions/Scores"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Score not found"
+      x-swagger-router-controller: "swagger_server.controllers.score_controller"
+    delete:
+      tags:
+      - "score"
+      summary: "Deletes a score"
+      operationId: "delete_score"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "scoreId"
+        in: "path"
+        description: "Score id to delete"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Score not found"
+      x-swagger-router-controller: "swagger_server.controllers.score_controller"
+  /quiz:
+    post:
+      tags:
+      - "quiz"
+      summary: "Add new quiz"
+      operationId: "add_quiz"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Quiz object that needs added"
+        required: true
+        schema:
+          $ref: "#/definitions/Quiz"
+      responses:
+        405:
+          description: "Invalid Input"
+      x-swagger-router-controller: "swagger_server.controllers.quiz_controller"
+    put:
+      tags:
+      - "quiz"
+      summary: "Update existing quiz"
+      operationId: "update_quiz"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Quiz object that needs to be added"
+        required: true
+        schema:
+          $ref: "#/definitions/Quiz"
+      responses:
+        200:
+          description: "OK"
+      x-swagger-router-controller: "swagger_server.controllers.quiz_controller"
+  /quiz/{quizId}:
+    get:
+      tags:
+      - "quiz"
+      summary: "Find Quiz by ID"
+      description: "Returns a single quiz"
+      operationId: "get_quiz_by_id"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "quizId"
+        in: "path"
+        description: "ID of quiz to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Successful"
+          schema:
+            $ref: "#/definitions/Quiz"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Quiz not found"
+      x-swagger-router-controller: "swagger_server.controllers.quiz_controller"
+    delete:
+      tags:
+      - "quiz"
+      summary: "Deletes a quiz"
+      operationId: "delete_quiz"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "quizId"
+        in: "path"
+        description: "Quiz id to delete"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Quiz not found"
+      x-swagger-router-controller: "swagger_server.controllers.quiz_controller"
+  /problem:
+    post:
+      tags:
+      - "problems"
+      summary: "Add new problem"
+      operationId: "add_problem"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Problem object that needs added"
+        required: true
+        schema:
+          $ref: "#/definitions/Problems"
+      responses:
+        405:
+          description: "Invalid Input"
+      x-swagger-router-controller: "swagger_server.controllers.problems_controller"
+    put:
+      tags:
+      - "problems"
+      summary: "Update existing problem"
+      operationId: "update_problem"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Problem object that needs to be added"
+        required: true
+        schema:
+          $ref: "#/definitions/Problems"
+      responses:
+        200:
+          description: "OK"
+      x-swagger-router-controller: "swagger_server.controllers.problems_controller"
+  /problem/{problemId}:
+    get:
+      tags:
+      - "problems"
+      summary: "Find Problem by ID"
+      description: "Returns a single problem"
+      operationId: "get_problem_by_id"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "problemId"
+        in: "path"
+        description: "ID of problem to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Successful"
+          schema:
+            $ref: "#/definitions/Problems"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Problem not found"
+      x-swagger-router-controller: "swagger_server.controllers.problems_controller"
+    delete:
+      tags:
+      - "problems"
+      summary: "Deletes a problem"
+      operationId: "delete_problem"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "problemId"
+        in: "path"
+        description: "Problem id to delete"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Problem not found"
+      x-swagger-router-controller: "swagger_server.controllers.problems_controller"
+  /step:
+    post:
+      tags:
+      - "step"
+      summary: "Add new step"
+      operationId: "add_step"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Step object that needs added"
+        required: true
+        schema:
+          $ref: "#/definitions/Step"
+      responses:
+        405:
+          description: "Invalid Input"
+      x-swagger-router-controller: "swagger_server.controllers.step_controller"
+    put:
+      tags:
+      - "step"
+      summary: "Update existing step"
+      operationId: "update_step"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Step object that needs to be added"
+        required: true
+        schema:
+          $ref: "#/definitions/Step"
+      responses:
+        200:
+          description: "OK"
+      x-swagger-router-controller: "swagger_server.controllers.step_controller"
+  /step/{stepId}:
+    get:
+      tags:
+      - "step"
+      summary: "Find Step by ID"
+      description: "Returns a single step"
+      operationId: "get_step_by_id"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "stepId"
+        in: "path"
+        description: "ID of step to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "Successful"
+          schema:
+            $ref: "#/definitions/Step"
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Step not found"
+      x-swagger-router-controller: "swagger_server.controllers.step_controller"
+    delete:
+      tags:
+      - "step"
+      summary: "Deletes a step"
+      operationId: "delete_step"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - name: "stepId"
+        in: "path"
+        description: "Step id to delete"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Step not found"
+      x-swagger-router-controller: "swagger_server.controllers.step_controller"
+definitions:
+  User:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      firstName:
+        type: "string"
+        example: "Bobby"
+      lastName:
+        type: "string"
+        example: "Jones"
+    xml:
+      name: "User"
+    example:
+      firstName: "Bobby"
+      lastName: "Jones"
+      id: 0
+  Teacher:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      user_id:
+        type: "integer"
+        format: "int64"
+      password:
+        type: "string"
+    xml:
+      name: "Teacher"
+    example:
+      password: "password"
+      user_id: 6
+      id: 0
+  Student:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      user_id:
+        type: "integer"
+        format: "int64"
+      teacher_id:
+        type: "integer"
+        format: "int64"
+      semester:
+        type: "string"
+        format: "date-time"
+    xml:
+      name: "Student"
+    example:
+      user_id: 6
+      teacher_id: 1
+      semester: "2000-01-23T04:56:07.000+00:00"
+      id: 0
+  Scores:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      student_id:
+        type: "integer"
+        format: "int64"
+      teacher_id:
+        type: "integer"
+        format: "int64"
+      quiz_id:
+        type: "integer"
+        format: "int64"
+      score:
+        type: "number"
+    xml:
+      name: "Scores"
+    example:
+      score: 5.63737665663332876420099637471139430999755859375
+      quiz_id: 5
+      teacher_id: 1
+      student_id: 6
+      id: 0
+  Quiz:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      teacher_id:
+        type: "integer"
+        format: "int64"
+      problem:
+        type: "array"
+        items:
+          type: "integer"
+    xml:
+      name: "Quiz"
+    example:
+      problem:
+      - 1
+      - 1
+      teacher_id: 6
+      id: 0
+  Problems:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      probText:
+        type: "string"
+      currentStep:
+        type: "integer"
+        format: "int64"
+      answer:
+        type: "boolean"
+      nextStep:
+        type: "integer"
+        format: "int64"
+    xml:
+      name: "Problems"
+    example:
+      currentStep: 6
+      probText: "probText"
+      answer: true
+      nextStep: 1
+      id: 0
+  Step:
+    type: "object"
+    properties:
+      id:
+        type: "boolean"
+      answer:
+        type: "boolean"
+      complete:
+        type: "boolean"
+    xml:
+      name: "Step"
+    example:
+      answer: true
+      id: true
+      complete: true

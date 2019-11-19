@@ -1,0 +1,854 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "API for Test4Success",
+    "version" : "1",
+    "title" : "Test_4_Success"
+  },
+  "host" : "ec2-23-21-94-99.compute-1.amazonaws.com",
+  "basePath" : "/dfdl2gmjf1u73c",
+  "schemes" : [ "https", "http" ],
+  "paths" : {
+    "/users" : {
+      "post" : {
+        "tags" : [ "users" ],
+        "summary" : "Add new user to system",
+        "operationId" : "addUser",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "User object that needs added to system",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/User"
+          }
+        } ],
+        "responses" : {
+          "405" : {
+            "description" : "Invalid Input"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "users" ],
+        "summary" : "Update existing user",
+        "operationId" : "updateUser",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "User object that needs to be added",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/User"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      }
+    },
+    "/users/{userId}" : {
+      "get" : {
+        "tags" : [ "users" ],
+        "summary" : "Find User by ID",
+        "description" : "Returns a single user",
+        "operationId" : "getUserById",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "path",
+          "description" : "ID of user to return",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful",
+            "schema" : {
+              "$ref" : "#/definitions/User"
+            }
+          },
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "User not found"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "users" ],
+        "summary" : "Deletes a user",
+        "operationId" : "deleteUser",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "api_key",
+          "in" : "header",
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "userId",
+          "in" : "path",
+          "description" : "User id to delete",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "User not found"
+          }
+        }
+      }
+    },
+    "/teachers" : {
+      "post" : {
+        "tags" : [ "teachers" ],
+        "summary" : "Add new teacher",
+        "operationId" : "addTeacher",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Teacher object that needs added to system",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Teacher"
+          }
+        } ],
+        "responses" : {
+          "405" : {
+            "description" : "Invalid Input"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "teachers" ],
+        "summary" : "Update existing teacher",
+        "operationId" : "updateTeacher",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Teacher object that needs to be added",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Teacher"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      }
+    },
+    "/teachers/{teacherId}" : {
+      "get" : {
+        "tags" : [ "teachers" ],
+        "summary" : "Find Teacher by ID",
+        "description" : "Returns a single teacher",
+        "operationId" : "getTeacherById",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "teacherId",
+          "in" : "path",
+          "description" : "ID of teacher to return",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful",
+            "schema" : {
+              "$ref" : "#/definitions/Teacher"
+            }
+          },
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Teacher not found"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "teachers" ],
+        "summary" : "Deletes a teacher",
+        "operationId" : "deleteTeacher",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "teacherId",
+          "in" : "path",
+          "description" : "Teacher id to delete",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Teacher not found"
+          }
+        }
+      }
+    },
+    "/students" : {
+      "post" : {
+        "tags" : [ "students" ],
+        "summary" : "Add new student",
+        "operationId" : "addStudent",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Student object that needs added to system",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Student"
+          }
+        } ],
+        "responses" : {
+          "405" : {
+            "description" : "Invalid Input"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "students" ],
+        "summary" : "Update existing student",
+        "operationId" : "updateStudent",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Student object that needs to be added",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Student"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      }
+    },
+    "/students/{studentId}" : {
+      "get" : {
+        "tags" : [ "students" ],
+        "summary" : "Find Student by ID",
+        "description" : "Returns a single student",
+        "operationId" : "getStudentById",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "studentId",
+          "in" : "path",
+          "description" : "ID of student to return",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful",
+            "schema" : {
+              "$ref" : "#/definitions/Student"
+            }
+          },
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Student not found"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "students" ],
+        "summary" : "Deletes a student",
+        "operationId" : "deleteStudent",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "studentId",
+          "in" : "path",
+          "description" : "Student id to delete",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Student not found"
+          }
+        }
+      }
+    },
+    "/score" : {
+      "post" : {
+        "tags" : [ "score" ],
+        "summary" : "Add new score",
+        "operationId" : "addScore",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Score object that needs added",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Scores"
+          }
+        } ],
+        "responses" : {
+          "405" : {
+            "description" : "Invalid Input"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "score" ],
+        "summary" : "Update existing score",
+        "operationId" : "updateScore",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Score object that needs to be added",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Scores"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      }
+    },
+    "/score/{scoreId}" : {
+      "get" : {
+        "tags" : [ "score" ],
+        "summary" : "Find Score by ID",
+        "description" : "Returns a single score",
+        "operationId" : "getScoreById",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "scoreId",
+          "in" : "path",
+          "description" : "ID of score to return",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful",
+            "schema" : {
+              "$ref" : "#/definitions/Scores"
+            }
+          },
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Score not found"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "score" ],
+        "summary" : "Deletes a score",
+        "operationId" : "deleteScore",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "scoreId",
+          "in" : "path",
+          "description" : "Score id to delete",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Score not found"
+          }
+        }
+      }
+    },
+    "/quiz" : {
+      "post" : {
+        "tags" : [ "quiz" ],
+        "summary" : "Add new quiz",
+        "operationId" : "addQuiz",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Quiz object that needs added",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Quiz"
+          }
+        } ],
+        "responses" : {
+          "405" : {
+            "description" : "Invalid Input"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "quiz" ],
+        "summary" : "Update existing quiz",
+        "operationId" : "updateQuiz",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Quiz object that needs to be added",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Quiz"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      }
+    },
+    "/quiz/{quizId}" : {
+      "get" : {
+        "tags" : [ "quiz" ],
+        "summary" : "Find Quiz by ID",
+        "description" : "Returns a single quiz",
+        "operationId" : "getQuizById",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "quizId",
+          "in" : "path",
+          "description" : "ID of quiz to return",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful",
+            "schema" : {
+              "$ref" : "#/definitions/Quiz"
+            }
+          },
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Quiz not found"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "quiz" ],
+        "summary" : "Deletes a quiz",
+        "operationId" : "deleteQuiz",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "quizId",
+          "in" : "path",
+          "description" : "Quiz id to delete",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Quiz not found"
+          }
+        }
+      }
+    },
+    "/problem" : {
+      "post" : {
+        "tags" : [ "problems" ],
+        "summary" : "Add new problem",
+        "operationId" : "addProblem",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Problem object that needs added",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Problems"
+          }
+        } ],
+        "responses" : {
+          "405" : {
+            "description" : "Invalid Input"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "problems" ],
+        "summary" : "Update existing problem",
+        "operationId" : "updateProblem",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Problem object that needs to be added",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Problems"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      }
+    },
+    "/problem/{problemId}" : {
+      "get" : {
+        "tags" : [ "problems" ],
+        "summary" : "Find Problem by ID",
+        "description" : "Returns a single problem",
+        "operationId" : "getProblemById",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "problemId",
+          "in" : "path",
+          "description" : "ID of problem to return",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful",
+            "schema" : {
+              "$ref" : "#/definitions/Problems"
+            }
+          },
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Problem not found"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "problems" ],
+        "summary" : "Deletes a problem",
+        "operationId" : "deleteProblem",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "problemId",
+          "in" : "path",
+          "description" : "Problem id to delete",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Problem not found"
+          }
+        }
+      }
+    },
+    "/step" : {
+      "post" : {
+        "tags" : [ "step" ],
+        "summary" : "Add new step",
+        "operationId" : "addStep",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Step object that needs added",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Step"
+          }
+        } ],
+        "responses" : {
+          "405" : {
+            "description" : "Invalid Input"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "step" ],
+        "summary" : "Update existing step",
+        "operationId" : "updateStep",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "description" : "Step object that needs to be added",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Step"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      }
+    },
+    "/step/{stepId}" : {
+      "get" : {
+        "tags" : [ "step" ],
+        "summary" : "Find Step by ID",
+        "description" : "Returns a single step",
+        "operationId" : "getStepById",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "stepId",
+          "in" : "path",
+          "description" : "ID of step to return",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Successful",
+            "schema" : {
+              "$ref" : "#/definitions/Step"
+            }
+          },
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Step not found"
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "step" ],
+        "summary" : "Deletes a step",
+        "operationId" : "deleteStep",
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "stepId",
+          "in" : "path",
+          "description" : "Step id to delete",
+          "required" : true,
+          "type" : "integer",
+          "format" : "int64"
+        } ],
+        "responses" : {
+          "400" : {
+            "description" : "Invalid ID supplied"
+          },
+          "404" : {
+            "description" : "Step not found"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "User" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "firstName" : {
+          "type" : "string",
+          "example" : "Bobby"
+        },
+        "lastName" : {
+          "type" : "string",
+          "example" : "Jones"
+        }
+      },
+      "xml" : {
+        "name" : "User"
+      }
+    },
+    "Teacher" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "user_id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "password" : {
+          "type" : "string"
+        }
+      },
+      "xml" : {
+        "name" : "Teacher"
+      }
+    },
+    "Student" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "user_id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "teacher_id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "semester" : {
+          "type" : "string",
+          "format" : "date-time"
+        }
+      },
+      "xml" : {
+        "name" : "Student"
+      }
+    },
+    "Scores" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "student_id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "teacher_id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "quiz_id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "score" : {
+          "type" : "number"
+        }
+      },
+      "xml" : {
+        "name" : "Scores"
+      }
+    },
+    "Quiz" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "teacher_id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "problem" : {
+          "type" : "array",
+          "items" : {
+            "type" : "integer"
+          }
+        }
+      },
+      "xml" : {
+        "name" : "Quiz"
+      }
+    },
+    "Problems" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "probText" : {
+          "type" : "string"
+        },
+        "currentStep" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "answer" : {
+          "type" : "boolean"
+        },
+        "nextStep" : {
+          "type" : "integer",
+          "format" : "int64"
+        }
+      },
+      "xml" : {
+        "name" : "Problems"
+      }
+    },
+    "Step" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "boolean"
+        },
+        "answer" : {
+          "type" : "boolean"
+        },
+        "complete" : {
+          "type" : "boolean"
+        }
+      },
+      "xml" : {
+        "name" : "Step"
+      }
+    }
+  }
+}
