@@ -19,12 +19,6 @@ class Routes extends React.Component {
         <Route exact path="/login/teacher" component={TeacherLoginPage} />
         <Route exact path="/login/student" component={StudentLoginPage} />
         <Route exact path="/student/waiting" component={StudentWaitingPage} />
-
-        <Route
-          render={function () {
-            return <h1>Not Found</h1>;
-          }}
-        />
       </Switch>
     );
   }
