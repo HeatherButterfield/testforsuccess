@@ -12,7 +12,7 @@ function HomePage() {
           <div class="text-center py-5 px-4 margin-sides">
             <div>
               <h1 class="h1-responsive pt-3 mb-5 font-bold margin-top"><strong>Welcome to Test for Success!</strong></h1>
-              <p class="h3-responsive mx-5 mb-5">We are a testing software designed for elementary school teachers.
+              <p class="h3-responsive mx-5 mb-5">We are a testing software designed<br/>for elementary school teachers.
               </p>
               <a class="btn text-dark yellow accent-1 btn-rounded btn-md">Sign-up</a>
               <a href="/login" class="btn text-white rgba-cyan-strong btn-rounded btn-md">Login</a>
