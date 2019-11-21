@@ -21,7 +21,7 @@ class Routes extends React.Component {
         <Route exact path="/login/student" component={StudentLoginPage} />
         <Route exact path="/student/waiting" component={StudentWaitingPage} />
         <Route exact path="/teacher/dashboard" component={TeacherDashboardPage} />
-        <Route exact path="/teacher/tests" component={TeacherDashboardPage} />
+        <Route exact path="/teacher/tests" component={TestsPage} />
 
         <Route
           render={function () {

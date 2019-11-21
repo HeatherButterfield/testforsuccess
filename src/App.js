@@ -34,7 +34,7 @@ function App() {
                      </div>
                    </li>
                    <li className="nav-item">
-                     <a className="nav-link" href="">Tests</a>
+                     <a className="nav-link" href="/teacher/tests">Tests</a>
                    </li>
                  </ul>
                  <ul className="navbar-nav ml-auto nav-flex-icons">
