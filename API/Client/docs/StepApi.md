@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 Add new step
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -27,7 +27,7 @@ from pprint import pprint
 api_instance = swagger_client.StepApi()
 body = swagger_client.Step() # Step | Step object that needs added
 
-try:
+try: 
     # Add new step
     api_instance.add_step(body)
 except ApiException as e:
@@ -60,7 +60,7 @@ No authorization required
 
 Deletes a step
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -72,7 +72,7 @@ from pprint import pprint
 api_instance = swagger_client.StepApi()
 step_id = 789 # int | Step id to delete
 
-try:
+try: 
     # Deletes a step
     api_instance.delete_step(step_id)
 except ApiException as e:
@@ -107,7 +107,7 @@ Find Step by ID
 
 Returns a single step
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -119,7 +119,7 @@ from pprint import pprint
 api_instance = swagger_client.StepApi()
 step_id = 789 # int | ID of step to return
 
-try:
+try: 
     # Find Step by ID
     api_response = api_instance.get_step_by_id(step_id)
     pprint(api_response)
@@ -153,7 +153,7 @@ No authorization required
 
 Update existing step
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -165,7 +165,7 @@ from pprint import pprint
 api_instance = swagger_client.StepApi()
 body = swagger_client.Step() # Step | Step object that needs to be added
 
-try:
+try: 
     # Update existing step
     api_instance.update_step(body)
 except ApiException as e:

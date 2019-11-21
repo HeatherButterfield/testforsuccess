@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 Add new score
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -27,7 +27,7 @@ from pprint import pprint
 api_instance = swagger_client.ScoreApi()
 body = swagger_client.Scores() # Scores | Score object that needs added
 
-try:
+try: 
     # Add new score
     api_instance.add_score(body)
 except ApiException as e:
@@ -60,7 +60,7 @@ No authorization required
 
 Deletes a score
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -72,7 +72,7 @@ from pprint import pprint
 api_instance = swagger_client.ScoreApi()
 score_id = 789 # int | Score id to delete
 
-try:
+try: 
     # Deletes a score
     api_instance.delete_score(score_id)
 except ApiException as e:
@@ -107,7 +107,7 @@ Find Score by ID
 
 Returns a single score
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -119,7 +119,7 @@ from pprint import pprint
 api_instance = swagger_client.ScoreApi()
 score_id = 789 # int | ID of score to return
 
-try:
+try: 
     # Find Score by ID
     api_response = api_instance.get_score_by_id(score_id)
     pprint(api_response)
@@ -153,7 +153,7 @@ No authorization required
 
 Update existing score
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -165,7 +165,7 @@ from pprint import pprint
 api_instance = swagger_client.ScoreApi()
 body = swagger_client.Scores() # Scores | Score object that needs to be added
 
-try:
+try: 
     # Update existing score
     api_instance.update_score(body)
 except ApiException as e:

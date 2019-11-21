@@ -32,6 +32,8 @@ paths:
       responses:
         405:
           description: "Invalid Input"
+      x-auth-type: "None"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.users_controller"
     put:
       tags:
@@ -54,6 +56,8 @@ paths:
       responses:
         200:
           description: "OK"
+      x-auth-type: "None"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.users_controller"
   /users/{userId}:
     get:
@@ -81,6 +85,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "User not found"
+      x-auth-type: "None"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.users_controller"
     delete:
       tags:
@@ -106,6 +112,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "User not found"
+      x-auth-type: "None"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.users_controller"
   /teachers:
     post:
@@ -129,6 +137,8 @@ paths:
       responses:
         405:
           description: "Invalid Input"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.teachers_controller"
     put:
       tags:
@@ -151,6 +161,8 @@ paths:
       responses:
         200:
           description: "OK"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.teachers_controller"
   /teachers/{teacherId}:
     get:
@@ -178,6 +190,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "Teacher not found"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.teachers_controller"
     delete:
       tags:
@@ -199,6 +213,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "Teacher not found"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.teachers_controller"
   /students:
     post:
@@ -222,6 +238,8 @@ paths:
       responses:
         405:
           description: "Invalid Input"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.students_controller"
     put:
       tags:
@@ -244,6 +262,8 @@ paths:
       responses:
         200:
           description: "OK"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.students_controller"
   /students/{studentId}:
     get:
@@ -271,6 +291,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "Student not found"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.students_controller"
     delete:
       tags:
@@ -292,6 +314,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "Student not found"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.students_controller"
   /score:
     post:
@@ -315,6 +339,8 @@ paths:
       responses:
         405:
           description: "Invalid Input"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.score_controller"
     put:
       tags:
@@ -337,6 +363,8 @@ paths:
       responses:
         200:
           description: "OK"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.score_controller"
   /score/{scoreId}:
     get:
@@ -364,6 +392,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "Score not found"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.score_controller"
     delete:
       tags:
@@ -385,6 +415,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "Score not found"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.score_controller"
   /quiz:
     post:
@@ -408,6 +440,8 @@ paths:
       responses:
         405:
           description: "Invalid Input"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.quiz_controller"
     put:
       tags:
@@ -430,6 +464,8 @@ paths:
       responses:
         200:
           description: "OK"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.quiz_controller"
   /quiz/{quizId}:
     get:
@@ -457,6 +493,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "Quiz not found"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.quiz_controller"
     delete:
       tags:
@@ -478,6 +516,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "Quiz not found"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.quiz_controller"
   /problem:
     post:
@@ -501,6 +541,8 @@ paths:
       responses:
         405:
           description: "Invalid Input"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.problems_controller"
     put:
       tags:
@@ -523,6 +565,8 @@ paths:
       responses:
         200:
           description: "OK"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.problems_controller"
   /problem/{problemId}:
     get:
@@ -550,6 +594,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "Problem not found"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.problems_controller"
     delete:
       tags:
@@ -571,6 +617,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "Problem not found"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.problems_controller"
   /step:
     post:
@@ -594,6 +642,8 @@ paths:
       responses:
         405:
           description: "Invalid Input"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.step_controller"
     put:
       tags:
@@ -616,6 +666,8 @@ paths:
       responses:
         200:
           description: "OK"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.step_controller"
   /step/{stepId}:
     get:
@@ -643,6 +695,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "Step not found"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.step_controller"
     delete:
       tags:
@@ -664,6 +718,8 @@ paths:
           description: "Invalid ID supplied"
         404:
           description: "Step not found"
+      x-auth-type: "Application & Application User"
+      x-throttling-tier: "Unlimited"
       x-swagger-router-controller: "swagger_server.controllers.step_controller"
 definitions:
   User:

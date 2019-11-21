@@ -3,7 +3,7 @@
 """
     Test_4_Success
 
-    API for Test4Success  # noqa: E501
+    API for Test4Success
 
     OpenAPI spec version: 1
     
@@ -13,15 +13,17 @@
 
 from __future__ import absolute_import
 
+import os
+import sys
 import unittest
 
 import swagger_client
-from swagger_client.models.user import User  # noqa: E501
 from swagger_client.rest import ApiException
+from swagger_client.models.user import User
 
 
 class TestUser(unittest.TestCase):
-    """User unit test stubs"""
+    """ User unit test stubs """
 
     def setUp(self):
         pass
@@ -30,9 +32,11 @@ class TestUser(unittest.TestCase):
         pass
 
     def testUser(self):
-        """Test User"""
+        """
+        Test User
+        """
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.user.User()  # noqa: E501
+        #model = swagger_client.models.user.User()
         pass
 
 

@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 Add new quiz
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -27,7 +27,7 @@ from pprint import pprint
 api_instance = swagger_client.QuizApi()
 body = swagger_client.Quiz() # Quiz | Quiz object that needs added
 
-try:
+try: 
     # Add new quiz
     api_instance.add_quiz(body)
 except ApiException as e:
@@ -60,7 +60,7 @@ No authorization required
 
 Deletes a quiz
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -72,7 +72,7 @@ from pprint import pprint
 api_instance = swagger_client.QuizApi()
 quiz_id = 789 # int | Quiz id to delete
 
-try:
+try: 
     # Deletes a quiz
     api_instance.delete_quiz(quiz_id)
 except ApiException as e:
@@ -107,7 +107,7 @@ Find Quiz by ID
 
 Returns a single quiz
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -119,7 +119,7 @@ from pprint import pprint
 api_instance = swagger_client.QuizApi()
 quiz_id = 789 # int | ID of quiz to return
 
-try:
+try: 
     # Find Quiz by ID
     api_response = api_instance.get_quiz_by_id(quiz_id)
     pprint(api_response)
@@ -153,7 +153,7 @@ No authorization required
 
 Update existing quiz
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -165,7 +165,7 @@ from pprint import pprint
 api_instance = swagger_client.QuizApi()
 body = swagger_client.Quiz() # Quiz | Quiz object that needs to be added
 
-try:
+try: 
     # Update existing quiz
     api_instance.update_quiz(body)
 except ApiException as e:

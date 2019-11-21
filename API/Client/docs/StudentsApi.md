@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 Add new student
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -27,7 +27,7 @@ from pprint import pprint
 api_instance = swagger_client.StudentsApi()
 body = swagger_client.Student() # Student | Student object that needs added to system
 
-try:
+try: 
     # Add new student
     api_instance.add_student(body)
 except ApiException as e:
@@ -60,7 +60,7 @@ No authorization required
 
 Deletes a student
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -72,7 +72,7 @@ from pprint import pprint
 api_instance = swagger_client.StudentsApi()
 student_id = 789 # int | Student id to delete
 
-try:
+try: 
     # Deletes a student
     api_instance.delete_student(student_id)
 except ApiException as e:
@@ -107,7 +107,7 @@ Find Student by ID
 
 Returns a single student
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -119,7 +119,7 @@ from pprint import pprint
 api_instance = swagger_client.StudentsApi()
 student_id = 789 # int | ID of student to return
 
-try:
+try: 
     # Find Student by ID
     api_response = api_instance.get_student_by_id(student_id)
     pprint(api_response)
@@ -153,7 +153,7 @@ No authorization required
 
 Update existing student
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -165,7 +165,7 @@ from pprint import pprint
 api_instance = swagger_client.StudentsApi()
 body = swagger_client.Student() # Student | Student object that needs to be added
 
-try:
+try: 
     # Update existing student
     api_instance.update_student(body)
 except ApiException as e:

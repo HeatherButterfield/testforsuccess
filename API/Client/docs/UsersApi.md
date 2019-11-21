@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 Add new user to system
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -27,7 +27,7 @@ from pprint import pprint
 api_instance = swagger_client.UsersApi()
 body = swagger_client.User() # User | User object that needs added to system
 
-try:
+try: 
     # Add new user to system
     api_instance.add_user(body)
 except ApiException as e:
@@ -60,7 +60,7 @@ No authorization required
 
 Deletes a user
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -73,7 +73,7 @@ api_instance = swagger_client.UsersApi()
 user_id = 789 # int | User id to delete
 api_key = 'api_key_example' # str |  (optional)
 
-try:
+try: 
     # Deletes a user
     api_instance.delete_user(user_id, api_key=api_key)
 except ApiException as e:
@@ -109,7 +109,7 @@ Find User by ID
 
 Returns a single user
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -121,7 +121,7 @@ from pprint import pprint
 api_instance = swagger_client.UsersApi()
 user_id = 789 # int | ID of user to return
 
-try:
+try: 
     # Find User by ID
     api_response = api_instance.get_user_by_id(user_id)
     pprint(api_response)
@@ -155,7 +155,7 @@ No authorization required
 
 Update existing user
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -167,7 +167,7 @@ from pprint import pprint
 api_instance = swagger_client.UsersApi()
 body = swagger_client.User() # User | User object that needs to be added
 
-try:
+try: 
     # Update existing user
     api_instance.update_user(body)
 except ApiException as e:

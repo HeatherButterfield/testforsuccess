@@ -1,10 +1,9 @@
 # coding: utf-8
 
-# flake8: noqa
 """
     Test_4_Success
 
-    API for Test4Success  # noqa: E501
+    API for Test4Success
 
     OpenAPI spec version: 1
     
@@ -15,10 +14,10 @@
 from __future__ import absolute_import
 
 # import models into model package
-from swagger_client.models.problems import Problems
-from swagger_client.models.quiz import Quiz
-from swagger_client.models.scores import Scores
-from swagger_client.models.step import Step
-from swagger_client.models.student import Student
-from swagger_client.models.teacher import Teacher
-from swagger_client.models.user import User
+from .problems import Problems
+from .quiz import Quiz
+from .scores import Scores
+from .step import Step
+from .student import Student
+from .teacher import Teacher
+from .user import User

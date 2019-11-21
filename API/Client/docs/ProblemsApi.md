@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 Add new problem
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -27,7 +27,7 @@ from pprint import pprint
 api_instance = swagger_client.ProblemsApi()
 body = swagger_client.Problems() # Problems | Problem object that needs added
 
-try:
+try: 
     # Add new problem
     api_instance.add_problem(body)
 except ApiException as e:
@@ -60,7 +60,7 @@ No authorization required
 
 Deletes a problem
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -72,7 +72,7 @@ from pprint import pprint
 api_instance = swagger_client.ProblemsApi()
 problem_id = 789 # int | Problem id to delete
 
-try:
+try: 
     # Deletes a problem
     api_instance.delete_problem(problem_id)
 except ApiException as e:
@@ -107,7 +107,7 @@ Find Problem by ID
 
 Returns a single problem
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -119,7 +119,7 @@ from pprint import pprint
 api_instance = swagger_client.ProblemsApi()
 problem_id = 789 # int | ID of problem to return
 
-try:
+try: 
     # Find Problem by ID
     api_response = api_instance.get_problem_by_id(problem_id)
     pprint(api_response)
@@ -153,7 +153,7 @@ No authorization required
 
 Update existing problem
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -165,7 +165,7 @@ from pprint import pprint
 api_instance = swagger_client.ProblemsApi()
 body = swagger_client.Problems() # Problems | Problem object that needs to be added
 
-try:
+try: 
     # Update existing problem
     api_instance.update_problem(body)
 except ApiException as e:

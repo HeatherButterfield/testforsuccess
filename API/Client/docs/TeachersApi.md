@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 Add new teacher
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -27,7 +27,7 @@ from pprint import pprint
 api_instance = swagger_client.TeachersApi()
 body = swagger_client.Teacher() # Teacher | Teacher object that needs added to system
 
-try:
+try: 
     # Add new teacher
     api_instance.add_teacher(body)
 except ApiException as e:
@@ -60,7 +60,7 @@ No authorization required
 
 Deletes a teacher
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -72,7 +72,7 @@ from pprint import pprint
 api_instance = swagger_client.TeachersApi()
 teacher_id = 789 # int | Teacher id to delete
 
-try:
+try: 
     # Deletes a teacher
     api_instance.delete_teacher(teacher_id)
 except ApiException as e:
@@ -107,7 +107,7 @@ Find Teacher by ID
 
 Returns a single teacher
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -119,7 +119,7 @@ from pprint import pprint
 api_instance = swagger_client.TeachersApi()
 teacher_id = 789 # int | ID of teacher to return
 
-try:
+try: 
     # Find Teacher by ID
     api_response = api_instance.get_teacher_by_id(teacher_id)
     pprint(api_response)
@@ -153,7 +153,7 @@ No authorization required
 
 Update existing teacher
 
-### Example
+### Example 
 ```python
 from __future__ import print_function
 import time
@@ -165,7 +165,7 @@ from pprint import pprint
 api_instance = swagger_client.TeachersApi()
 body = swagger_client.Teacher() # Teacher | Teacher object that needs to be added
 
-try:
+try: 
     # Update existing teacher
     api_instance.update_teacher(body)
 except ApiException as e:

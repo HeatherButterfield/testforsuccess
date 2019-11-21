@@ -3,7 +3,7 @@
 """
     Test_4_Success
 
-    API for Test4Success  # noqa: E501
+    API for Test4Success
 
     OpenAPI spec version: 1
     
@@ -13,47 +13,53 @@
 
 from __future__ import absolute_import
 
+import os
+import sys
 import unittest
 
 import swagger_client
-from swagger_client.api.score_api import ScoreApi  # noqa: E501
 from swagger_client.rest import ApiException
+from swagger_client.apis.score_api import ScoreApi
 
 
 class TestScoreApi(unittest.TestCase):
-    """ScoreApi unit test stubs"""
+    """ ScoreApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.api.score_api.ScoreApi()  # noqa: E501
+        self.api = swagger_client.apis.score_api.ScoreApi()
 
     def tearDown(self):
         pass
 
     def test_add_score(self):
-        """Test case for add_score
+        """
+        Test case for add_score
 
-        Add new score  # noqa: E501
+        Add new score
         """
         pass
 
     def test_delete_score(self):
-        """Test case for delete_score
+        """
+        Test case for delete_score
 
-        Deletes a score  # noqa: E501
+        Deletes a score
         """
         pass
 
     def test_get_score_by_id(self):
-        """Test case for get_score_by_id
+        """
+        Test case for get_score_by_id
 
-        Find Score by ID  # noqa: E501
+        Find Score by ID
         """
         pass
 
     def test_update_score(self):
-        """Test case for update_score
+        """
+        Test case for update_score
 
-        Update existing score  # noqa: E501
+        Update existing score
         """
         pass
 

@@ -3,7 +3,7 @@
 """
     Test_4_Success
 
-    API for Test4Success  # noqa: E501
+    API for Test4Success
 
     OpenAPI spec version: 1
     
@@ -13,47 +13,53 @@
 
 from __future__ import absolute_import
 
+import os
+import sys
 import unittest
 
 import swagger_client
-from swagger_client.api.quiz_api import QuizApi  # noqa: E501
 from swagger_client.rest import ApiException
+from swagger_client.apis.quiz_api import QuizApi
 
 
 class TestQuizApi(unittest.TestCase):
-    """QuizApi unit test stubs"""
+    """ QuizApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.api.quiz_api.QuizApi()  # noqa: E501
+        self.api = swagger_client.apis.quiz_api.QuizApi()
 
     def tearDown(self):
         pass
 
     def test_add_quiz(self):
-        """Test case for add_quiz
+        """
+        Test case for add_quiz
 
-        Add new quiz  # noqa: E501
+        Add new quiz
         """
         pass
 
     def test_delete_quiz(self):
-        """Test case for delete_quiz
+        """
+        Test case for delete_quiz
 
-        Deletes a quiz  # noqa: E501
+        Deletes a quiz
         """
         pass
 
     def test_get_quiz_by_id(self):
-        """Test case for get_quiz_by_id
+        """
+        Test case for get_quiz_by_id
 
-        Find Quiz by ID  # noqa: E501
+        Find Quiz by ID
         """
         pass
 
     def test_update_quiz(self):
-        """Test case for update_quiz
+        """
+        Test case for update_quiz
 
-        Update existing quiz  # noqa: E501
+        Update existing quiz
         """
         pass
 

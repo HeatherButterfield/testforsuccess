@@ -3,7 +3,7 @@
 """
     Test_4_Success
 
-    API for Test4Success  # noqa: E501
+    API for Test4Success
 
     OpenAPI spec version: 1
     
@@ -11,7 +11,8 @@
 """
 
 
-from setuptools import setup, find_packages  # noqa: H301
+import sys
+from setuptools import setup, find_packages
 
 NAME = "swagger-client"
 VERSION = "1.0.0"
@@ -22,13 +23,7 @@ VERSION = "1.0.0"
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
 
-REQUIRES = [
-    "certifi>=2017.4.17",
-    "python-dateutil>=2.1",
-    "six>=1.10",
-    "urllib3>=1.23"
-]
-    
+REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
 
 setup(
     name=NAME,
@@ -41,6 +36,6 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     long_description="""\
-    API for Test4Success  # noqa: E501
+    API for Test4Success
     """
 )

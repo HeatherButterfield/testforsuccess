@@ -3,7 +3,7 @@
 """
     Test_4_Success
 
-    API for Test4Success  # noqa: E501
+    API for Test4Success
 
     OpenAPI spec version: 1
     
@@ -13,47 +13,53 @@
 
 from __future__ import absolute_import
 
+import os
+import sys
 import unittest
 
 import swagger_client
-from swagger_client.api.students_api import StudentsApi  # noqa: E501
 from swagger_client.rest import ApiException
+from swagger_client.apis.students_api import StudentsApi
 
 
 class TestStudentsApi(unittest.TestCase):
-    """StudentsApi unit test stubs"""
+    """ StudentsApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.api.students_api.StudentsApi()  # noqa: E501
+        self.api = swagger_client.apis.students_api.StudentsApi()
 
     def tearDown(self):
         pass
 
     def test_add_student(self):
-        """Test case for add_student
+        """
+        Test case for add_student
 
-        Add new student  # noqa: E501
+        Add new student
         """
         pass
 
     def test_delete_student(self):
-        """Test case for delete_student
+        """
+        Test case for delete_student
 
-        Deletes a student  # noqa: E501
+        Deletes a student
         """
         pass
 
     def test_get_student_by_id(self):
-        """Test case for get_student_by_id
+        """
+        Test case for get_student_by_id
 
-        Find Student by ID  # noqa: E501
+        Find Student by ID
         """
         pass
 
     def test_update_student(self):
-        """Test case for update_student
+        """
+        Test case for update_student
 
-        Update existing student  # noqa: E501
+        Update existing student
         """
         pass
 

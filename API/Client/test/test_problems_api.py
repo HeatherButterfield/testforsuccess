@@ -3,7 +3,7 @@
 """
     Test_4_Success
 
-    API for Test4Success  # noqa: E501
+    API for Test4Success
 
     OpenAPI spec version: 1
     
@@ -13,47 +13,53 @@
 
 from __future__ import absolute_import
 
+import os
+import sys
 import unittest
 
 import swagger_client
-from swagger_client.api.problems_api import ProblemsApi  # noqa: E501
 from swagger_client.rest import ApiException
+from swagger_client.apis.problems_api import ProblemsApi
 
 
 class TestProblemsApi(unittest.TestCase):
-    """ProblemsApi unit test stubs"""
+    """ ProblemsApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.api.problems_api.ProblemsApi()  # noqa: E501
+        self.api = swagger_client.apis.problems_api.ProblemsApi()
 
     def tearDown(self):
         pass
 
     def test_add_problem(self):
-        """Test case for add_problem
+        """
+        Test case for add_problem
 
-        Add new problem  # noqa: E501
+        Add new problem
         """
         pass
 
     def test_delete_problem(self):
-        """Test case for delete_problem
+        """
+        Test case for delete_problem
 
-        Deletes a problem  # noqa: E501
+        Deletes a problem
         """
         pass
 
     def test_get_problem_by_id(self):
-        """Test case for get_problem_by_id
+        """
+        Test case for get_problem_by_id
 
-        Find Problem by ID  # noqa: E501
+        Find Problem by ID
         """
         pass
 
     def test_update_problem(self):
-        """Test case for update_problem
+        """
+        Test case for update_problem
 
-        Update existing problem  # noqa: E501
+        Update existing problem
         """
         pass
 

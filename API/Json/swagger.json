@@ -29,7 +29,9 @@
           "405" : {
             "description" : "Invalid Input"
           }
-        }
+        },
+        "x-auth-type" : "None",
+        "x-throttling-tier" : "Unlimited"
       },
       "put" : {
         "tags" : [ "users" ],
@@ -50,7 +52,9 @@
           "200" : {
             "description" : "OK"
           }
-        }
+        },
+        "x-auth-type" : "None",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/users/{userId}" : {
@@ -81,7 +85,9 @@
           "404" : {
             "description" : "User not found"
           }
-        }
+        },
+        "x-auth-type" : "None",
+        "x-throttling-tier" : "Unlimited"
       },
       "delete" : {
         "tags" : [ "users" ],
@@ -108,7 +114,9 @@
           "404" : {
             "description" : "User not found"
           }
-        }
+        },
+        "x-auth-type" : "None",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/teachers" : {
@@ -131,7 +139,9 @@
           "405" : {
             "description" : "Invalid Input"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       },
       "put" : {
         "tags" : [ "teachers" ],
@@ -152,7 +162,9 @@
           "200" : {
             "description" : "OK"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/teachers/{teacherId}" : {
@@ -183,7 +195,9 @@
           "404" : {
             "description" : "Teacher not found"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       },
       "delete" : {
         "tags" : [ "teachers" ],
@@ -205,7 +219,9 @@
           "404" : {
             "description" : "Teacher not found"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/students" : {
@@ -228,7 +244,9 @@
           "405" : {
             "description" : "Invalid Input"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       },
       "put" : {
         "tags" : [ "students" ],
@@ -249,7 +267,9 @@
           "200" : {
             "description" : "OK"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/students/{studentId}" : {
@@ -280,7 +300,9 @@
           "404" : {
             "description" : "Student not found"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       },
       "delete" : {
         "tags" : [ "students" ],
@@ -302,7 +324,9 @@
           "404" : {
             "description" : "Student not found"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/score" : {
@@ -325,7 +349,9 @@
           "405" : {
             "description" : "Invalid Input"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       },
       "put" : {
         "tags" : [ "score" ],
@@ -346,7 +372,9 @@
           "200" : {
             "description" : "OK"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/score/{scoreId}" : {
@@ -377,7 +405,9 @@
           "404" : {
             "description" : "Score not found"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       },
       "delete" : {
         "tags" : [ "score" ],
@@ -399,7 +429,9 @@
           "404" : {
             "description" : "Score not found"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/quiz" : {
@@ -422,7 +454,9 @@
           "405" : {
             "description" : "Invalid Input"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       },
       "put" : {
         "tags" : [ "quiz" ],
@@ -443,7 +477,9 @@
           "200" : {
             "description" : "OK"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/quiz/{quizId}" : {
@@ -474,7 +510,9 @@
           "404" : {
             "description" : "Quiz not found"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       },
       "delete" : {
         "tags" : [ "quiz" ],
@@ -496,7 +534,9 @@
           "404" : {
             "description" : "Quiz not found"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/problem" : {
@@ -519,7 +559,9 @@
           "405" : {
             "description" : "Invalid Input"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       },
       "put" : {
         "tags" : [ "problems" ],
@@ -540,7 +582,9 @@
           "200" : {
             "description" : "OK"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/problem/{problemId}" : {
@@ -571,7 +615,9 @@
           "404" : {
             "description" : "Problem not found"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       },
       "delete" : {
         "tags" : [ "problems" ],
@@ -593,7 +639,9 @@
           "404" : {
             "description" : "Problem not found"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/step" : {
@@ -616,7 +664,9 @@
           "405" : {
             "description" : "Invalid Input"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       },
       "put" : {
         "tags" : [ "step" ],
@@ -637,7 +687,9 @@
           "200" : {
             "description" : "OK"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       }
     },
     "/step/{stepId}" : {
@@ -668,7 +720,9 @@
           "404" : {
             "description" : "Step not found"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       },
       "delete" : {
         "tags" : [ "step" ],
@@ -690,7 +744,9 @@
           "404" : {
             "description" : "Step not found"
           }
-        }
+        },
+        "x-auth-type" : "Application & Application User",
+        "x-throttling-tier" : "Unlimited"
       }
     }
   },
