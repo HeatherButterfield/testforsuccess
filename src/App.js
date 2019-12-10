@@ -22,7 +22,7 @@ function App() {
                      <a className="nav-link" href="/teacher/dashboard">Home</a>
                    </li>
                    <li className="nav-item">
-                     <a className="nav-link" href="">Data</a>
+                     <a className="nav-link" href="/teacher/data">Data</a>
                    </li>
                    <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
