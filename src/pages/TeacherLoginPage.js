@@ -4,7 +4,7 @@ function TeacherLoginPage() {
   return (
     <div class="row d-flex justify-content-center">
       <div class="form margin-top col-md-3 text-center">
-        <form class="text-center margin-bottom" action="#!" >
+        <form class="text-center margin-bottom" action="/teacher/dashboard" >
           <p class="h4 mb-4">Teacher Login</p>
           <input type="email" id="password" class="form-control mb-4" placeholder="E-mail"/>
           <input type="password" id="password" class="form-control mb-4" placeholder="Password"/>
