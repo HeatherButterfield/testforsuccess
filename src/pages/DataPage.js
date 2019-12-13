@@ -281,8 +281,9 @@ const DatatablePage = () => {
     <MDBDataTable
       scrollX
       striped
-
-      theadColor="light-blue"
+      bordered
+      displayEntries={false}
+      theadColor="rgba-blue-strong"
       theadTextWhite
       hover
       data={data}
