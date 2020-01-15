@@ -1,5 +1,6 @@
 import React from "react";
 import { MDBDataTable } from 'mdbreact';
+
 const DatatablePage = () => {
   const data = {
     columns: [
@@ -7,146 +8,175 @@ const DatatablePage = () => {
         label: 'Name',
         field: 'name',
         sort: 'asc',
+        width: 150
       },
       {
         label: 'Surname',
         field: 'surname',
         sort: 'asc',
+        width: 150
       },
       {
         label: 'Mastery',
         field: 'mastery',
         sort: 'asc',
+        width: 150
       },
       {
         label: 'A',
         field: 'a',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'B',
         field: 'b',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'C',
         field: 'c',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'D',
         field: 'd',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'E',
         field: 'e',
         sort: 'asc',
+        width: 50
       },
       {
         label: "F",
         field: 'f',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'G',
         field: 'g',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'H',
         field: 'h',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'I',
         field: 'i',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'J',
         field: 'j',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'K',
         field: 'k',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'L',
         field: 'l',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'M',
         field: 'm',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'N',
         field: 'n',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'O',
         field: 'o',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'P',
         field: 'p',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'Q',
         field: 'q',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'R',
         field: 'r',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'S',
         field: 's',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'T',
         field: 't',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'U',
         field: 'u',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'V',
         field: 'v',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'W',
         field: 'w',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'X',
         field: 'x',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'Y',
         field: 'y',
         sort: 'asc',
+        width: 50
       },
       {
         label: 'Z',
         field: 'z',
         sort: 'asc',
+        width: 50
       }
     ],
     rows: [
@@ -281,21 +311,22 @@ const DatatablePage = () => {
     <MDBDataTable
       scrollX
       striped
+      paging={false}
       bordered
-      displayEntries={false}
       theadColor="rgba-blue-strong"
       theadTextWhite
       hover
+      responsive
       data={data}
     />
   );
 }
 function DataPage() {
   return (
-    <div class="container container d-flex justify-content-around flex-wrap margin-bottom">
+    <div class="container d-flex justify-content-around flex-wrap margin-bottom">
       <h1 class="mt-5">Progress Tracker</h1>
-      <div class="row d-flex justify-content-center">
-        <div class="col-sm-8">
+      <div id="tableSize" class="row justify-content-center">
+        <div class="col-sm-12">
           <DatatablePage></DatatablePage>
         </div>
       </div>

@@ -58,6 +58,10 @@
   height: 5rem;
 }
 
+#tableSize {
+  max-width: inherit;
+}
+
 @media screen and (max-width: 768px) {
   .margin-sides {
     margin-left: 10%;
