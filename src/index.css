@@ -33,6 +33,20 @@
   justify-content: space-between;
 }
 
+.card-title-test {
+  font-size: 4rem;
+}
+
+.test-card {
+  margin: 20px;
+  width: 225px;
+}
+
+.note-card {
+  margin: 20px;
+  width: 225px;
+}
+
 .half {
     width: 50%;
 }
