@@ -9,7 +9,7 @@ function TeacherLoginPage() {
           <input type="email" id="password" class="form-control mb-4" placeholder="E-mail"/>
           <input type="password" id="password" class="form-control mb-4" placeholder="Password"/>
 
-          <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+          <button href="teacher/dashboard" class="btn yellow-btn btn-block my-4" type="submit">Sign in</button>
 
           <p>Not a member?
               <a href=""> Sign Up</a>
