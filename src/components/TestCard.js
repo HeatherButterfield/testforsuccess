@@ -19,10 +19,10 @@ function TestCard(props) {
   }
   return (
     <div>
-      <div class="card test-card rgba-yellow-strong" id={props.title}>
+      <div onClick={toggleColor} class="card test-card rgba-yellow-strong" id={props.title}>
         <div class="card-body">
           <div class="d-flex justify-content-end">
-            <i onClick={toggleColor} class="fas fa-flag text-white"></i>
+            <i class="fas fa-flag text-white"></i>
           </div>
           <h1 class="card-title card-title-test text-center text-white">{props.title}</h1>
           <div class="form-group">

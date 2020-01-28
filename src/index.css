@@ -15,6 +15,10 @@
   border-radius: 50px;
 }
 
+.yellow-btn {
+  background-color: #fff175;
+}
+
 .margin-sides {
   margin-left: 40px;
   margin-right: 40px;

@@ -28,6 +28,9 @@ function TeacherTestPage() {
                 <label for="notes" class="text-white">Notes</label>
                 <textarea class="form-control rounded-0" id="notes" rows="6"></textarea>
               </div>
+              <div class="text-center">
+                <button type="button" class="btn yellow-btn text-white" style={{width: "175px"}}><b>Done</b></button>
+              </div>
             </div>
           </div>
           </div>
