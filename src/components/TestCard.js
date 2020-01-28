@@ -19,15 +19,15 @@ function TestCard(props) {
   }
   return (
     <div>
-      <div onClick={toggleColor} class="card test-card rgba-yellow-strong" id={props.title}>
-        <div class="card-body">
-          <div class="d-flex justify-content-end">
-            <i class="fas fa-flag text-white"></i>
+      <div onClick={toggleColor} className="card test-card rgba-yellow-strong" id={props.title}>
+        <div className="card-body">
+          <div className="d-flex justify-content-end">
+            <i className="fas fa-flag text-white"></i>
           </div>
-          <h1 class="card-title card-title-test text-center text-white">{props.title}</h1>
-          <div class="form-group">
-            <label for="notes{props.title}" class="text-white">Notes</label>
-            <textarea class="form-control rounded-0" id="notes{props.title}" rows="3"></textarea>
+          <h1 className="card-title card-title-test text-center text-white">{props.title}</h1>
+          <div className="form-group">
+            <label for="notes{props.title}" className="text-white">Notes</label>
+            <textarea className="form-control rounded-0" id="notes{props.title}" rows="3"></textarea>
           </div>
         </div>
       </div>
