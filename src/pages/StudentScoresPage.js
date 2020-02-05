@@ -3,18 +3,12 @@ import { MDBDataTable } from 'mdbreact';
 import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 
-const DatatablePage = () => {
+const StudentScoresTable = () => {
   const data = {
     columns: [
       {
-        label: 'Name',
+        label: 'Month',
         field: 'name',
-        sort: 'asc',
-        width: 150
-      },
-      {
-        label: 'Surname',
-        field: 'surname',
         sort: 'asc',
         width: 150
       },
@@ -183,8 +177,7 @@ const DatatablePage = () => {
     ],
     rows: [
       {
-        name: <a href="/teacher/data/studentscores">Tiger</a>,
-        surname: 'Nixon',
+        month: 'August',
         mastery: 89+"%",
         a: 51+"%",
         b: 52+"%",
@@ -214,8 +207,7 @@ const DatatablePage = () => {
         z: 83+"%"
       },
       {
-        name: 'Garrett',
-        surname: 'Winters',
+        name: 'September',
         mastery: '89%',
         a: 59+"%",
         b: 58+"%",
@@ -245,8 +237,7 @@ const DatatablePage = () => {
         z: 86+"%"
       },
       {
-        name: 'Ashton',
-        surname: 'Cox',
+        name: 'October',
         mastery: '89%',
         a: 55+"%",
         b: 55+"%",
@@ -276,8 +267,7 @@ const DatatablePage = () => {
         z: 81+"%"
       },
       {
-        name: 'Cedric',
-        surname: 'Kelly',
+        name: 'November',
         mastery: '89%',
         a: 66+"%",
         b: 57+"%",
@@ -305,10 +295,189 @@ const DatatablePage = () => {
         x: 99+"%",
         y: 98+"%",
         z: 81+"%"
+      },
+      {
+        name: 'December',
+        mastery: '89%',
+        a: 66+"%",
+        b: 57+"%",
+        c: 55+"%",
+        d: 54+"%",
+        e: 53+"%",
+        f: 81+"%",
+        g: 50+"%",
+        h: 69+"%",
+        i: 85+"%",
+        j: 91+"%",
+        k: 42+"%",
+        l: 44+"%",
+        m: 96+"%",
+        n: 80+"%",
+        o: 100+"%",
+        p: 97+"%",
+        q: 68+"%",
+        r: 60+"%",
+        s: 53+"%",
+        t: 93+"%",
+        u: 31+"%",
+        v: 45+"%",
+        w: 79+"%",
+        x: 99+"%",
+        y: 98+"%",
+        z: 81+"%"
+      },
+      {
+        name: 'January',
+        mastery: '89%',
+        a: 66+"%",
+        b: 57+"%",
+        c: 55+"%",
+        d: 54+"%",
+        e: 53+"%",
+        f: 81+"%",
+        g: 50+"%",
+        h: 69+"%",
+        i: 85+"%",
+        j: 91+"%",
+        k: 42+"%",
+        l: 44+"%",
+        m: 96+"%",
+        n: 80+"%",
+        o: 100+"%",
+        p: 97+"%",
+        q: 68+"%",
+        r: 60+"%",
+        s: 53+"%",
+        t: 93+"%",
+        u: 31+"%",
+        v: 45+"%",
+        w: 79+"%",
+        x: 99+"%",
+        y: 98+"%",
+        z: 81+"%"
+      },
+      {
+        name: 'February',
+        mastery: '89%',
+        a: 66+"%",
+        b: 57+"%",
+        c: 55+"%",
+        d: 54+"%",
+        e: 53+"%",
+        f: 81+"%",
+        g: 50+"%",
+        h: 69+"%",
+        i: 85+"%",
+        j: 91+"%",
+        k: 42+"%",
+        l: 44+"%",
+        m: 96+"%",
+        n: 80+"%",
+        o: 100+"%",
+        p: 97+"%",
+        q: 68+"%",
+        r: 60+"%",
+        s: 53+"%",
+        t: 93+"%",
+        u: 31+"%",
+        v: 45+"%",
+        w: 79+"%",
+        x: 99+"%",
+        y: 98+"%",
+        z: 81+"%"
+      },
+      {
+        name: 'March',
+        mastery:'',
+        a:'',
+        b:'',
+        c:'',
+        d:'',
+        e:'',
+        f:'',
+        g:'',
+        h:'',
+        i:'',
+        j:'',
+        k:'',
+        l:'',
+        m:'',
+        n:'',
+        o:'',
+        p:'',
+        q:'',
+        r:'',
+        s:'',
+        t:'',
+        u:'',
+        v:'',
+        w:'',
+        x:'',
+        y:'',
+        z:''
+      },
+      {
+        name: 'April',
+        mastery:'',
+        a:'',
+        b:'',
+        c:'',
+        d:'',
+        e:'',
+        f:'',
+        g:'',
+        h:'',
+        i:'',
+        j:'',
+        k:'',
+        l:'',
+        m:'',
+        n:'',
+        o:'',
+        p:'',
+        q:'',
+        r:'',
+        s:'',
+        t:'',
+        u:'',
+        v:'',
+        w:'',
+        x:'',
+        y:'',
+        z:''
+      },
+      {
+        name: 'May',
+        mastery:'',
+        a:'',
+        b:'',
+        c:'',
+        d:'',
+        e:'',
+        f:'',
+        g:'',
+        h:'',
+        i:'',
+        j:'',
+        k:'',
+        l:'',
+        m:'',
+        n:'',
+        o:'',
+        p:'',
+        q:'',
+        r:'',
+        s:'',
+        t:'',
+        u:'',
+        v:'',
+        w:'',
+        x:'',
+        y:'',
+        z:''
       }
     ]
   };
-
   return (
     <MDBDataTable
       scrollX
@@ -324,17 +493,19 @@ const DatatablePage = () => {
   );
 }
 
-function DataPage() {
+function StudentScoresPage() {
   return (
     <div class="container d-flex justify-content-around flex-wrap margin-bottom">
-      <h1 class="display-4 mt-5 mb-5">Progress Tracker</h1>
+          <h1 class="display-4 mt-5 mb-5">Student Progress Tracker</h1>
+
+
       <div id="tableSize" class="row justify-content-center">
         <div class="col-sm-12">
-          <DatatablePage></DatatablePage>
+          <StudentScoresTable></StudentScoresTable>
         </div>
       </div>
     </div>
   )
 }
 
-export default DataPage;
+export default StudentScoresPage;

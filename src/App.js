@@ -21,8 +21,14 @@ function App() {
                    <li className="nav-item">
                      <a className="nav-link" href="/teacher/dashboard">Home</a>
                    </li>
-                   <li className="nav-item">
-                     <a className="nav-link" href="/teacher/data">Data</a>
+                   <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Data
+                     </a>
+                       <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                         <a class="dropdown-itme" href="/teacher/data">Class Data</a>
+                         <a class="dropdown-item" href="/teacher/data/studentscores">Student Data</a>
+                       </div>
                    </li>
                    <li class="nav-item dropdown">
                      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
