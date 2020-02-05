@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.form {
+  width: 300px;
+}
+
 .card {
   width: 300px;
 }
@@ -13,6 +17,10 @@
 
 .btn-rounded {
   border-radius: 50px;
+}
+
+.yellow-btn {
+  background-color: #fff175;
 }
 
 .margin-sides {
@@ -31,6 +39,20 @@
 .cardContainer {
   display: flex;
   justify-content: space-between;
+}
+
+.card-title-test {
+  font-size: 4rem;
+}
+
+.test-card {
+  margin: 20px;
+  width: 225px;
+}
+
+.note-card {
+  margin: 20px;
+  width: 225px;
 }
 
 .half {

@@ -20,11 +20,11 @@ function TeacherDashboardPage() {
         <div className="card margin-top">
           <div className="card-body">
             <form>
-              <p className="h4 mb-4 text-center">Assess</p>
+              <p className="h4 mb-4 text-center">Assessment</p>
 
               <label for="select">Class</label>
               <select className="browser-default custom-select mb-4" id="select">
-                  <option value="" disabled="" selected="">Select test...</option>
+                  <option value="" disabled="" selected="">Select class...</option>
                   <option value="1">Class 1</option>
                   <option value="2">Class 2</option>
               </select>
@@ -50,7 +50,7 @@ function TeacherDashboardPage() {
               <label for="date-picker">Date</label>
               <input type="date" id="date-picker" defaultValue={date} class="form-control datepicker"/>
 
-              <button className="btn btn-block my-4 text-white rgba-cyan-strong" type="submit">Assess</button>
+              <button className="btn btn-block my-4 text-white rgba-cyan-strong" type="submit">Launch Test</button>
             </form>
           </div>
         </div>
