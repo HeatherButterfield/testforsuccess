@@ -9,8 +9,6 @@ import TeacherLoginPage from "./pages/TeacherLoginPage";
 import StudentWaitingPage from "./pages/StudentWaitingPage";
 import TeacherDashboardPage from "./pages/TeacherDashboardPage"
 import TeacherTestPage from "./pages/TeacherTestPage"
-
-
 import DataPage from "./pages/DataPage"
 import StudentScoresPage from "./pages/StudentScoresPage"
 
@@ -26,8 +24,6 @@ class Routes extends React.Component {
         <Route exact path="/student/waiting" component={StudentWaitingPage} />
         <Route exact path="/teacher/dashboard" component={TeacherDashboardPage} />
         <Route exact path="/teacher/test" component={TeacherTestPage} />
-
-
         <Route exact path="/teacher/data" component={DataPage} />
         <Route exact path="/teacher/data/studentscores" component={StudentScoresPage} />
 
