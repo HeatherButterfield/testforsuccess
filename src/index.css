@@ -111,6 +111,11 @@
   box-sizing: border-box;
 }
 
+.center-text-confirm{
+  font-size: 5vw;
+  padding: 2vh;
+}
+
 @media screen and (max-width: 768px) {
   .margin-sides {
     margin-left: 10%;
