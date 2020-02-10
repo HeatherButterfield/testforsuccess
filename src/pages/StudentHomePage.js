@@ -19,7 +19,7 @@ function StudentHomePage() {
                   <option value="6">Baylee</option>
 
               </select>
-            <a href="/student/waiting">
+            <a href="/student/confirm">
               <button className="btn btn-block my-4 text-white rgba-cyan-strong" type="submit">Start Test</button>
             </a>
           </div>
