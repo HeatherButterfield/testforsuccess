@@ -7,17 +7,13 @@ import LoginPage from "./pages/LoginPage";
 import StudentLoginPage from "./pages/StudentLoginPage";
 import TeacherLoginPage from "./pages/TeacherLoginPage";
 import StudentWaitingPage from "./pages/StudentWaitingPage";
-<<<<<<< HEAD
-import TeacherDashboardPage from "./pages/TeacherDashboardPage"
-import TeacherTestPage from "./pages/TeacherTestPage"
-import DataPage from "./pages/DataPage"
-import StudentScoresPage from "./pages/StudentScoresPage"
-=======
 import TeacherDashboardPage from "./pages/TeacherDashboardPage";
+import TeacherTestPage from "./pages/TeacherTestPage";
+import DataPage from "./pages/DataPage";
+import StudentScoresPage from "./pages/StudentScoresPage";
 import StudentTestPage from "./pages/StudentTestPage";
 import StudentRestartPage from "./pages/StudentRestartPage";
 import StudentHomePage from "./pages/StudentHomePage";
->>>>>>> brodie/StudentTestPage
 
 class Routes extends React.Component {
   render() {
@@ -30,15 +26,12 @@ class Routes extends React.Component {
         <Route exact path="/login/student" component={StudentLoginPage} />
         <Route exact path="/student/waiting" component={StudentWaitingPage} />
         <Route exact path="/teacher/dashboard" component={TeacherDashboardPage} />
-<<<<<<< HEAD
         <Route exact path="/teacher/test" component={TeacherTestPage} />
         <Route exact path="/teacher/data" component={DataPage} />
         <Route exact path="/teacher/data/studentscores" component={StudentScoresPage} />
-=======
         <Route exact path="/student/test" component={StudentTestPage} />
         <Route exact path="/student/restart" component={StudentRestartPage} />
         <Route exact path="/student/home" component={StudentHomePage}/>
->>>>>>> brodie/StudentTestPage
 
           render={function () {
             return <h1>Not Found</h1>;
