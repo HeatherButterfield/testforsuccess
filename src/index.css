@@ -58,6 +58,32 @@
   height: 5rem;
 }
 
+.right{
+  position: absolute;
+  right: 3vw;
+  font-size: 1vh;
+}
+
+.center-text{
+  font-size: 50vh;
+}
+.center{
+  text-align: center;
+  padding: 5vh;
+}
+.title{
+  text-align: center;
+  padding: 1vh;
+  font-size: 5vh;
+}
+.student-name{
+  width: 5vw;
+  height: 3vh;
+  text-align: center;
+  font-size: 2vh;
+  box-sizing: border-box;
+}
+
 @media screen and (max-width: 768px) {
   .margin-sides {
     margin-left: 10%;
