@@ -3,7 +3,7 @@ import React from "react";
 function StudentLoginPage() {
   return (
     <div>
-      <div class="form margin-top text-center">
+      <div class="margin-top text-center">
         <label for="password" data-error="wrong" data-success="right" class="h1-responsive margin-top">Teacher ID</label>
         <br/>
         <input type="password" id="password" class="form-control-lg validate margin-top"/>
