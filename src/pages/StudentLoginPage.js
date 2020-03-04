@@ -8,7 +8,7 @@ function StudentLoginPage() {
         <br/>
         <input type="password" id="password" class="form-control-lg validate margin-top"/>
         <br/>
-        <a href="/student/home" class="btn text-dark yellow accent-1 btn-lg margin-top" style={{width: "250px"}}>Sign in</a>
+        <a href="/student/waiting" class="btn text-dark yellow accent-1 btn-lg margin-top" style={{width: "250px"}}>Sign in</a>
       </div>
     </div>
   )

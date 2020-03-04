@@ -87,12 +87,14 @@
 
 .right{
   position: absolute;
-  right: 3vw;
-  font-size: 1vh;
+  right: 5vw;
+  font-size: 15vh;
+  color: rgba(0, 188, 212, 0.7);
 }
 
 .center-text{
   font-size: 50vh;
+  color: rgba(0, 188, 212, 0.7);
 }
 .center{
   text-align: center;
@@ -114,6 +116,22 @@
 .center-text-confirm{
   font-size: 5vw;
   padding: 2vh;
+}
+
+.no-link{
+  color: rgba(244, 67, 54, 0.7);
+}
+
+.no-link:hover{
+  color: rgba(233, 30, 99, 0.7);
+}
+
+.yes-link{
+  color: rgba(3, 169, 244, 0.7);
+}
+
+.yes-link:hover{
+  color: rgba(3, 169, 244, 0.3);
 }
 
 @media screen and (max-width: 768px) {

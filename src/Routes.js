@@ -13,7 +13,7 @@ import DataPage from "./pages/DataPage";
 import StudentScoresPage from "./pages/StudentScoresPage";
 import StudentTestPage from "./pages/StudentTestPage";
 import StudentRestartPage from "./pages/StudentRestartPage";
-import StudentHomePage from "./pages/StudentHomePage";
+import TeacherSelectPage from "./pages/TeacherSelectPage";
 import StudentConfirmPage from "./pages/StudentConfirmPage";
 
 class Routes extends React.Component {
@@ -32,7 +32,7 @@ class Routes extends React.Component {
         <Route exact path="/teacher/data/studentscores" component={StudentScoresPage} />
         <Route exact path="/student/test" component={StudentTestPage} />
         <Route exact path="/student/restart" component={StudentRestartPage} />
-        <Route exact path="/student/home" component={StudentHomePage}/>
+        <Route exact path="/teacher/select" component={TeacherSelectPage}/>
         <Route exact path="/student/confirm" component={StudentConfirmPage}/>
 
           render={function () {

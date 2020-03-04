@@ -5,7 +5,7 @@ function StudentTestPage() {
   return (
     <div class="container">
       <div class="d-flex justify-content-center align-items-center center-text">A
-      <img class="right" src={Rarrow} alt="rarrow" style={{ height: "10vh", width: "auto" }}></img>
+      <i class="right fas fa-arrow-alt-circle-right text-rgba-blue-strong"></i>
       </div>
     </div>
   )

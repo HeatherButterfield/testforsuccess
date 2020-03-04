@@ -8,13 +8,13 @@ function StudentRestartPage() {
         <div className="title"> Great Job!</div>
         <div className="center">Click below to restart test</div>
       </div>
-      <a href="/student/test">
+      <a class="yes-link" href="/student/waiting">
         <div class="d-flex justify-content-center align-items-center" style={{height: "25vh"}}>
-            <img src={Restart} alt="restart" style={{ height: "25vh", width: "auto" }} />
+            <i class="fas fa-redo fa-10x"></i>
         </div>
       </a>
-      <a href="/student/home">
-        <div className="center">Click to go back home</div>
+      <a href="/">
+        <div className="center">Finished/Logout</div>
       </a>
     </div>
   )

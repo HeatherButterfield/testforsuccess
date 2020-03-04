@@ -1,6 +1,6 @@
 import React from "react";
 
-function StudentHomePage() {
+function TeacherSelectPage() {
   return (
     <div>
       <div className="title">Welcome!</div>
@@ -20,7 +20,7 @@ function StudentHomePage() {
 
               </select>
             <a href="/student/confirm">
-              <button className="btn btn-block my-4 text-white rgba-cyan-strong" type="submit">Start Test</button>
+              <button className="btn btn-block my-4 text-dark yellow accent-1 btn-lg margin-top" type="submit">Start Test</button>
             </a>
           </div>
         </div>
@@ -29,4 +29,4 @@ function StudentHomePage() {
   )
 }
 
-export default StudentHomePage;
+export default TeacherSelectPage;
