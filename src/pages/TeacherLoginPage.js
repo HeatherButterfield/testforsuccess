@@ -12,7 +12,7 @@ function TeacherLoginPage() {
           <button href="teacher/dashboard" class="btn yellow-btn btn-block my-4" type="submit">Sign in</button>
 
           <p>Not a member?
-              <a href=""> Sign Up</a>
+              <a href="/signup"> Sign Up</a>
           </p>
 
           <p>or sign in with:</p>
