@@ -1,21 +1,27 @@
 import React from "react";
 import Restart from "../assets/restart.png"
+import Celebrate from "../assets/celebrate.jpg"
 
 function StudentRestartPage() {
   return (
     <div>
-      <div>
-        <div className="title"> Great Job!</div>
-        <div className="center">Click below to restart test</div>
-      </div>
-      <a class="yes-link" href="/student/waiting">
-        <div class="d-flex justify-content-center align-items-center" style={{height: "25vh"}}>
-            <i class="fas fa-redo fa-10x"></i>
+      <div className="container">
+                <div className="title">Great Job!</div>
+        <div class="d-flex justify-content-center align-items-center">
+
+          <div>
+                <img src={Celebrate} alt="Celebrate" style={{backgroundImage: "Celebrate", backgroundSize: "100% auto", height: "60vh", backgroundRepeat: "no-repeat"}}></img>
+          </div>
         </div>
-      </a>
-      <a href="/">
-        <div className="center">Finished/Logout</div>
-      </a>
+        <div class="yes-link center-under" >
+          <a href="/student/waiting">
+            <div>Restart</div>
+          </a>
+          <a href="/">
+            <div>Finished/Logout</div>
+          </a>
+        </div>
+      </div>
     </div>
   )
 }
