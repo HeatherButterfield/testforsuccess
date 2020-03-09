@@ -3,12 +3,11 @@ import React from "react";
 function TeacherSelectPage() {
   return (
     <div>
-      <div className="title">Welcome!</div>
-      <div className="center">Find your name below to start test!</div>
+      <div className="title">Find the name of the student you want to test below!</div>
       <div class="d-flex justify-content-center" style={{height: "250px"}}>
         <div className="card margin-top">
           <div className="card-body">
-          <label for="select">Student</label>
+            <label for="select">Students</label>
               <select className="browser-default custom-select mb-4" id="select">
                   <option value="" disabled="" selected="">Select student...</option>
                   <option value="1">Kellie</option>
@@ -19,7 +18,7 @@ function TeacherSelectPage() {
                   <option value="6">Baylee</option>
 
               </select>
-            <a href="/student/confirm">
+            <a href="/teacher/waiting">
               <button className="btn btn-block my-4 text-dark yellow accent-1 btn-lg margin-top" type="submit">Start Test</button>
             </a>
           </div>

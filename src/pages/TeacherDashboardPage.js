@@ -19,7 +19,7 @@ function TeacherDashboardPage() {
 
         <div className="card margin-top">
           <div className="card-body">
-            <form>
+            <form action="/teacher/waiting">
               <p className="h4 mb-4 text-center">Assessment</p>
 
               <label for="select">Class</label>
@@ -49,8 +49,7 @@ function TeacherDashboardPage() {
 
               <label for="date-picker">Date</label>
               <input type="date" id="date-picker" defaultValue={date} class="form-control datepicker"/>
-
-              <button className="btn btn-block my-4 text-white rgba-cyan-strong" type="submit">Launch Test</button>
+              <button className="btn btn-block my-4 text-white rgba-cyan-strong" >Launch Test</button>              
             </form>
           </div>
         </div>

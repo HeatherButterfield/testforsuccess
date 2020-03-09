@@ -5,7 +5,9 @@ function StudentTestPage() {
   return (
     <div class="container">
       <div class="d-flex justify-content-center align-items-center center-text">A
-      <i class="right fas fa-arrow-alt-circle-right text-rgba-blue-strong"></i>
+        <a href="/student/restart">
+          <i class="right fas fa-arrow-alt-circle-right text-rgba-blue-strong"></i>
+        </a>
       </div>
     </div>
   )

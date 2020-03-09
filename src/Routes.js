@@ -16,6 +16,7 @@ import StudentRestartPage from "./pages/StudentRestartPage";
 import TeacherSelectPage from "./pages/TeacherSelectPage";
 import StudentConfirmPage from "./pages/StudentConfirmPage";
 import SignUpPage from "./pages/SignUpPage";
+import TeacherWaitingPage from "./pages/TeacherWaitingPage";
 
 class Routes extends React.Component {
   render() {
@@ -36,6 +37,7 @@ class Routes extends React.Component {
         <Route exact path="/teacher/select" component={TeacherSelectPage}/>
         <Route exact path="/student/confirm" component={StudentConfirmPage}/>
         <Route exact path="/signup" component={SignUpPage}/>
+        <Route exact path="/teacher/waiting" component={TeacherWaitingPage} />
 
           render={function () {
             return <h1>Not Found</h1>;

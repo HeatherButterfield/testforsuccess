@@ -1,12 +1,12 @@
 import React from "react";
 import Clock from "../assets/clock.gif"
 
-function StudentWaitingPage() {
+function TeacherWaitingPage() {
   return (
     <div>
-      <div className="title"> Waiting for the teacher...</div>
+      <div className="title"> Waiting for the Brodie...</div>
       <div class="d-flex justify-content-center align-items-center" style={{height: "500px"}}>
-          <a href="/student/confirm">
+          <a href="/teacher/test">
             <img src={Clock} alt="clock" />
           </a>
       </div>
@@ -14,4 +14,4 @@ function StudentWaitingPage() {
   )
 }
 
-export default StudentWaitingPage;
+export default TeacherWaitingPage;
